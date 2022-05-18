@@ -1,5 +1,5 @@
 import { Equal, Expect } from '@type-challenges/utils'
-
+import type { MyReadonly } from "./template"
 type cases = [
   Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,
 ]
@@ -14,5 +14,5 @@ interface Todo1 {
 }
 
 export {
-    cases
+  cases
 }
